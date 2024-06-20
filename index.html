@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="card container">
+        <div class="card-header">
+            <h1>shopping cart</h1>
+            <button class="remove-all">remove all</button>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <img src="https://img.freepik.com/photos-gratuite/jus-orange-frais-froid_144627-11208.jpg?t=st=1718460541~exp=1718464141~hmac=3eee2136488ec21851783d6402905f94a6e5c4af653f5dde56939f0b52b6d90d&w=360" class="card-img" alt="...">
+                <p>orange juice</p>
+                <i class="like fa-solid fa-heart"></i>
+                <div class="events-group">
+                    <button class="sub-item">-</button>
+                    <p class="quantity">1</p>
+                    <button class="add-item">+</button>
+                    <button class="remove">remove</button>
+                </div>
+                <p class="price">$<span class="price-product"data-unit="2.99">2.99</span></p>
+            </li>
+            <li class="list-group-item">
+                <img src="https://img.freepik.com/photos-gratuite/jus-pomme-frais-froid_144627-11408.jpg?t=st=1718460623~exp=1718464223~hmac=7be40e62d1caef11749d9e9d94c397bc605b2d4a443518ee17cb4d264bf64882&w=360" class="card-img" alt="...">
+                <p>apple juice</p>
+                <i class="like fa-solid fa-heart"></i>
+                <div class="events-group">
+                    <button class="sub-item">-</button>
+                    <p class="quantity">1</p>
+                    <button class="add-item">+</button>
+                    <button class="remove">remove</button>
+                </div>
+                <p class="price">$<span class="price-product" data-unit="3.49">3.49</span></p>
+            </li>
+            <li class="list-group-item">
+                <img src="https://img.freepik.com/photos-gratuite/vue-laterale-du-jus-raisin-noir-tube-boire-verre-bol-raisins-rouges-feuilles-fond-blanc_141793-27321.jpg?t=st=1718460709~exp=1718464309~hmac=4740d59fe56c4a31dccabdb6f8bc92b1e0511133626c68575135fd8a1bd9d879&w=740" class="card-img" alt="...">
+                <p>grape juice</p>
+                <i class="like fa-solid fa-heart"></i>
+                <div class="events-group">
+                    <button class="sub-item">-</button>
+                    <p class="quantity">1</p>
+                    <button class="add-item">+</button>
+                    <button class="remove">remove</button>
+                </div>
+                <p class="price">$<span class="price-product" data-unit="3.99">3.99</span></p>
+            </li>
+        </ul>
+        <div class="card-footer">
+            <p><span id="total_items"></span> items</p>
+            <h2>total : $<span class="total_price"></span></h2>
+            <button id="validate">validate</button>
+            <button id="cancel">cancel</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/2da92fe2cd.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
